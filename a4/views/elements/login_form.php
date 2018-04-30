@@ -3,7 +3,8 @@
 <fieldset>
 <legend>Log In</legend>
 <label for="username">Username/E-mail Address: <?=REQFIELD?></label>
-<input type="text" id="email" name="email" value="<?=$_POST['username']?>" maxlength="50" required="email" />
+<input type="text" id="email" name="email" value="<?=$_POST['email']?>" maxlength="50" required="email" />
+<!--the post value was "username"-->
 <br />
             
 <label for="password">Password: <?=REQFIELD?></label>
