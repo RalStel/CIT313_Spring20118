@@ -17,6 +17,12 @@ class BlogController extends Controller{
 		$this->set('posts',$posts);
 	}
 	
+        public function category($categoryID) {
+            $this->postObject = new Post();
+		$posts = $this->postObject->getCatPosts($categoryID);
+		$this->set('title', 'Categorized Blog View');
+		$this->set('posts',$posts);
+        }
 }
 
 ?>

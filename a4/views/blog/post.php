@@ -13,7 +13,7 @@ if (is_array($post)) {
         <h1><?php echo $title; ?></h1>
     </div>
     <p><?php echo $content; ?></p>
-    <sub><?php echo 'Posted on ' . $date . ' by <a href="' . BASE_URL . 'members/view/' . $uid . '">' . $first_name . ' ' . $last_name . '</a> in <a href="' . BASE_URL . 'category/view/' . $categoryid . '">' . $name . '</a>'; ?>
+    <sub><?php echo 'Posted on ' . $date . ' by <a href="' . BASE_URL . 'members/view/' . $uid . '">' . $first_name . ' ' . $last_name . '</a> in <a href="' . BASE_URL . 'blog/category/' . $categoryid . '">' . $name . '</a>'; ?>
     </sub>
     <?php
     $cururl = parse_url($_SERVER['REQUEST_URI'],PHP_URL_PATH);

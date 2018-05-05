@@ -16,7 +16,7 @@
       <div class="span8">
         <form action="<?php echo BASE_URL?>manageposts/<?php echo $task?>" method="post" onsubmit="editor.post()">
           <label>Title</label>
-          <input type="text" class="span6" name="title" value="<?php echo $title?>" required="title">
+          <input type="text" class="span6" name="title" value="<?php echo $title?>" >
      	  
           <label for="date">Date</label>
           <?php // set timezone
@@ -24,7 +24,7 @@ date_default_timezone_set('America/Indiana/Indianapolis');?>
           <input name="date" id="date" size="16" type="date" value="<?php echo $date = date('Y-m-d H:i:s'); ?>">
           
           <label for="category">Category</label>
-          <select class="input-sm" name="category" id="category" required="category">
+          <select class="input-sm" name="category" id="category" >
           <option value="">-- Select Category --</option>
           
           <?php
